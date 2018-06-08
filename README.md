@@ -19,7 +19,7 @@ clone the repo into your directory
 git clone https://github.com/SonomaDeepThought/deepintegration-one.git
 ```
 
-
+</br>
 
 ### How to commit changes made
 
@@ -29,7 +29,7 @@ git commit -am "message"
 ```
 The -a means:  _stage_ all modified files before committing. Essentially, ensure all modified  files are committed. 
 
-
+</br>
 
 
 ### How to checkout a branch
@@ -40,22 +40,26 @@ git status
 ```
 ![img missing](GitStatus.PNG)
 
-
 -OR-
 
 git branch will list all the branches as well as the current branch
 ```
 git branch
 ```
-
 ![img_missing](GitBranch.PNG)
+
+
+get all of the branches that exist and -prune our current list of any branches that may have been deleted
+```
+git fetch -p
+```
 
 Once you see which branch you are on, you can change to the branch you would like to work on
 ```
 git checkout branchname
 ```
 
-
+</br>
 
 
 ### How to create a branch
@@ -73,7 +77,7 @@ git push --set-upstream origin newBranch
 Now anyone with access to the repo should be able to see and access the newly created branch on the website. 
 
 
-
+</br>
 
 
 ### How to merge a two branches
@@ -103,9 +107,27 @@ git merge newFeature
 
 The reason for doing this in a 2-step process is that we want to find and squash issues with merging in the feature branch and not in the dev branch. We want to maintain working dev and master branches. 
 
+</br>
 
+### How to delete a branch(local or remote)
 
+To delete a local branch
+```
+git branch -d branchToDelete
+```
 
+To delete the branch from the repository
+```
+git push origin --delete branchToDelete
+```
+
+Again we should now update our branch list using fetch and prune
+```
+git fetch -p
+```
+
+</br>
+</br>
 
 # Good Git Practices
 * Commit often (notice even this repo has many commits)
@@ -120,6 +142,9 @@ link to more in-depth git practices:
 ```
 http://sethrobertson.github.io/GitBestPractices/
 ```
+
+</br>
+</br>
 
 # Workflow
 
