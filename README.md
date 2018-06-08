@@ -35,3 +35,36 @@ The first thing you do before working is check which branch you are working from
 git status
 ```
 ![img missing](GitStatus.PNG)
+
+
+-OR-
+
+git branch will list all the branches as well as the current branch
+```
+git branch
+```
+
+![img_missing](GitBranch.PNG)
+
+
+Once you see which branch you are on, you can change to the branch you would like to work on
+```
+git checkout branchname
+```
+
+To create a new branch from a branch (this is what we do since we only work off dev)
+```
+git checkout -b newBranch oldBranch
+```
+In our case:
+```
+git checkout -b newFeature dev
+```
+
+To be able to push your work in the new branch to GitHub we have to set the upstream
+```
+git push --set-upstream origin newBranch
+```
+Now anyone with access to the repo should be able to see and access the newly created branch
+
+
