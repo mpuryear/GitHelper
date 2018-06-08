@@ -93,3 +93,25 @@ git merge newFeature
 ```
 
 The reason for doing this in a 2-step process is that we want to find and squash issues with merging in the feature branch and not in the dev branch. We want to maintain working dev and master branches. 
+
+
+# Good Git Practices
+* Commit often
+* When to branch:
+   1. Always create a branch for each feature (merge them back later)
+   2. Create a branch for each bug fix
+   3. Let the master/dev branch be clean by not making it a Work In Progress (WIP)
+* Ensure dev is update by checking it out and doing a _git pull_ frequently.
+* Try to follow our workflow layed out below
+
+# Workflow
+In depth link:
+```
+https://nvie.com/posts/a-successful-git-branching-model/
+```
+
+Simple explanation:
+
+The idea is that our master is our "release version" and is always stable. The master branch will almost always be out of date, and only when we wish to "publish" should we be merging dev into master. 
+
+[img_missing](main-branches@2x.png)
