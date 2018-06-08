@@ -1,6 +1,6 @@
 # GitHelper
 
-## How-To simple Commands
+## How-To simple commands
 
 ### How to clone a repository:
 
