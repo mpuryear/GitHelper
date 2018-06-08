@@ -52,14 +52,12 @@ Once you see which branch you are on, you can change to the branch you would lik
 git checkout branchname
 ```
 
+
 To create a new branch from a branch (this is what we do since we only work off dev)
 ```
 git checkout -b newBranch oldBranch
 ```
-In our case:
-```
-git checkout -b newFeature dev
-```
+
 
 To be able to push your work in the new branch to GitHub we have to set the upstream
 ```
