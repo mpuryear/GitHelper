@@ -28,7 +28,7 @@ git commit -am "message"
 The -a tells the commit to add all modified files. 
 
 
-### How to checkout and create branches
+### How to checkout a branch
 
 The first thing you do before working is check which branch you are working from
 ```
@@ -52,6 +52,7 @@ Once you see which branch you are on, you can change to the branch you would lik
 git checkout branchname
 ```
 
+### How to create a branch
 
 To create a new branch from a branch (this is what we do since we only work off dev)
 ```
