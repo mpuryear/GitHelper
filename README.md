@@ -114,5 +114,5 @@ Simple explanation:
 
 The idea is that our master is our "release version" and is always stable. The master branch will almost always be out of date, and only when we wish to "publish" should we be merging dev into master. 
 
-[img_missing](main_branches2x.png)
+[img_missing](main_branches2x.PNG)
 
