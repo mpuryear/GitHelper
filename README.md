@@ -108,11 +108,11 @@ The reason for doing this in a 2-step process is that we want to find and squash
 
 
 # Good Git Practices
-* Commit often
+* Commit often (notice even this repo has many commits)
 * When to branch:
    1. Always create a branch for each feature (merge them back later)
    2. Create a branch for each bug fix
-   3. Let the master/dev branch be clean by not making it a Work In Progress (WIP)
+   3. Let the master branch be clean by not making it a Work In Progress (WIP)
 * Ensure dev is update by checking it out and doing a _git pull_ frequently.
 * Try to follow our workflow layed out below
 
@@ -136,7 +136,7 @@ The dev branch will look a little bit different. We will be frequently creating 
 
 Essentially, create a branch for anything you want to add/modify. Do the addition/modification and then merge the branch back into where it was created from. This will follow our workflow. After you get the hang of it you can decide if you would like to do all dev->master merges yourself, or you can "submit a pull request" and ask me to do that merge. A common practice is to have someone in charge of merging the development branch into master to ensure someone doesn't make it unusable.
 
-In depth link:
+In depth explanation:
 ```
 https://nvie.com/posts/a-successful-git-branching-model/
 ```
